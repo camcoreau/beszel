@@ -1,14 +1,21 @@
 {
-	"name": "Beszel",
+	"name": "CamCore Infrastructure Monitor",
+	"short_name": "CamCore Monitor",
+	"description": "Private infrastructure monitoring for CamCore systems and administrators.",
 	"icons": [
 		{
-			"src": "icon.png",
-			"sizes": "512x512",
+			"src": "camcore-icon.png",
+			"sizes": "64x64",
 			"type": "image/png"
+		},
+		{
+			"src": "camcore-icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
 		}
 	],
-  "start_url": "../",
+	"start_url": "../",
 	"display": "standalone",
-	"background_color": "#202225",
-	"theme_color": "#202225"
+	"background_color": "#07162f",
+	"theme_color": "#07162f"
 }
