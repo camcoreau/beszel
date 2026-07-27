@@ -18,7 +18,7 @@ export default function () {
 	const { theme } = useTheme()
 
 	useEffect(() => {
-		document.title = t`Login` + " / Beszel"
+		document.title = t`Login` + " / CamCore Infrastructure Monitor"
 
 		pb.send("/api/beszel/first-run", {}).then(({ firstRun }) => {
 			setFirstRun(firstRun)
@@ -60,10 +60,13 @@ export default function () {
 					<ModeToggle />
 				</div>
 				<div className="text-center">
-					<h1 className="mb-3">
-						<Logo className="h-7 fill-foreground mx-auto" />
-						<span className="sr-only">Beszel</span>
+					<h1 className="mb-2">
+						<Logo className="mx-auto" />
+						<span className="sr-only">CamCore Infrastructure Monitor</span>
 					</h1>
+					<p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+						Infrastructure Monitor
+					</p>
 					<p className="text-sm text-muted-foreground">{subtitle}</p>
 				</div>
 				{page?.route === "forgot_password" ? (
