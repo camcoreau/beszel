@@ -2,7 +2,7 @@
 
 This repository is CamCore's maintained downstream of
 [Beszel](https://github.com/henrygd/beszel) for private, administrator-focused
-infrastructure monitoring across **CamCore — Cameron Family Secure Network**.
+infrastructure monitoring across **CamCore – Cameron Family Secure Network**.
 
 > **CamCore is a privately owned and operated family technology network that
 > delivers secure, reliable and professionally managed digital services for the
