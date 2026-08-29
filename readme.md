@@ -1,3 +1,42 @@
+# CamCore Infrastructure Monitor downstream
+
+This repository is CamCore's maintained downstream of
+[Beszel](https://github.com/henrygd/beszel) for private, administrator-focused
+infrastructure monitoring across **CamCore — Cameron Family Secure Network**.
+
+> **CamCore is a privately owned and operated family technology network that
+> delivers secure, reliable and professionally managed digital services for the
+> Cameron household, Cameron-Media and associated family operations.**
+
+**Built for Home. Engineered Like Enterprise.**
+
+## CamCore scope
+
+- The downstream applies the **CamCore Infrastructure Monitor** browser, login,
+  logo and PWA identity while retaining Beszel's upstream monitoring
+  functionality.
+- The CamCore workflow can publish `ghcr.io/camcoreau/beszel:latest` and a
+  traceable `sha-*` image tag when the maintained interface or image definition
+  changes.
+- Monitoring is intended for CamCore administrators. This public repository
+  must never contain credentials, access tokens, private keys or monitoring
+  data.
+- Repository and image availability do not prove that a particular image is
+  deployed or that any live service is healthy. No deployment hostname or host
+  topology is defined by the current default branch.
+
+For controlled testing and rollback, prefer the published `sha-*` tag over the
+mutable `latest` tag and record the deployed image digest.
+
+Beszel and its original documentation remain the work of
+[Henry Goddard](https://github.com/henrygd) and upstream contributors. CamCore
+does not claim authorship of the upstream application. The downstream preserves
+the upstream [MIT Licence](LICENSE).
+
+---
+
+## Upstream Beszel documentation
+
 # Beszel
 
 Beszel is a lightweight server monitoring platform that includes Docker statistics, historical data, and alert functions.
