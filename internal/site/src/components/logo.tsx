@@ -3,7 +3,7 @@ import { prependBasePath } from "./router"
 export function Logo({ className }: { className?: string }) {
 	return (
 		<img
-			src={prependBasePath("/static/camcore-logo.svg")}
+			src={prependBasePath("/static/camcore-logo.svg?v=2026-08-30")}
 			alt="CamCore"
 			className={className}
 			style={{
