@@ -26,21 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch official CamCore assets
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p internal/site/public/static
-          curl -fsSL \
-            https://raw.githubusercontent.com/camcoreau/Seerr/develop/public/logo_full.svg \
-            -o internal/site/public/static/camcore-logo.svg
-          curl -fsSL \
-            https://raw.githubusercontent.com/camcoreau/Seerr/develop/public/os_icon.svg \
-            -o internal/site/public/static/camcore-icon.svg
-          curl -fsSL \
-            https://raw.githubusercontent.com/camcoreau/it-tools/main/public/camcore-icon.png \
-            -o internal/site/public/static/camcore-icon.png
-
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
 
